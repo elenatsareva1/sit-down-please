@@ -1,0 +1,92 @@
+.hero .container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+.hero__content {
+  padding: 80px 0;
+  width: 50%;
+}
+.hero__title {
+  margin: 0;
+  margin-bottom: 49px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #999;
+  text-decoration: none;
+}
+.hero__title-custom {
+  color: #fff;
+}
+.hero__btn {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+  background-color: #A65CF0;
+  padding: 22px 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.hero__swiper {
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.hero .swiper-pagination-bullet {
+  opacity: 1;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  position: relative;
+}
+.hero .swiper-slide:nth-child(1) {
+  background-image: url(../../images/hero1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .swiper-slide:nth-child(2) {
+  background-image: url(../../images/hero2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .swiper-slide:nth-child(3) {
+  background-image: url(../../images/hero3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .swiper-pagination {
+  bottom: 20px;
+}
+
+.swiper-orange {
+  stroke-dasharray: 62.8319, 62.8319;
+  stroke-dashoffset: 62.8319;
+}
+
+.swiper-pagination-bullet-active .swiper-orange {
+  animation: circle-progress 5.75s linear forwards;
+  animation-duration: 5.75s;
+  animation-timing-function: linear;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
+  animation-name: circle-progress;
+}
+
+@keyframes circle-progress {
+  from {
+    stroke-dashoffset: 62.8319;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}/*# sourceMappingURL=hero.css.map */

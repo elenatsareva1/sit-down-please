@@ -1,0 +1,574 @@
+//дизайнеры макета уроды редкостные
+@import "../main/helper";
+
+@media (max-width: 1840px) {
+    .modal__swiper {
+        .container {
+            width: 85%;
+        }
+
+        .product__swiper-2 .swiper-slide img {
+            height: 350px;
+        }
+
+        .product__small-swiper-2 .swiper-slide img {
+            height: 100px;
+        }
+    }
+}
+
+
+@media (max-width: 1320px) {
+
+    .product__small-swiper-2 {
+        border-radius: 10px;
+    }
+
+    .modal,
+    .modal__swiper,
+    .modal__ok {
+        z-index: 100000000000000000000000000000000000000;
+    }
+
+    .header__bottom {
+        padding-bottom: 13px;
+    }
+
+    .product {
+        padding-bottom: 58px;
+
+        .container {
+            padding: 0 36px;
+        }
+
+        &__content {
+            grid-template-columns: repeat(9, 1fr);
+        }
+
+        &__left {
+            grid-column: 1/6;
+        }
+
+        &__right {
+            grid-column: 6/10;
+            padding-bottom: 0;
+            padding-top: 37px;
+        }
+
+        &__swiper {
+            margin-bottom: -9px;
+        }
+
+        &__small-swiper {
+            padding-bottom: 8px;
+        }
+
+        &__info {
+            margin-bottom: 68px;
+        }
+
+        &__list-hidden {
+            display: flex;
+            width: 410px;
+        }
+
+        &__list-visible {
+            display: none
+        }
+
+        .product__instruction {
+            display: flex;
+
+            & img:nth-child(1) {
+                margin-right: 29px;
+            }
+
+            & img {
+                width: 243px;
+            }
+        }
+    }
+
+    .modal__swiper {
+        .container {
+            width: 85%;
+        }
+
+        .product__swiper-2 .swiper-slide img {
+            height: 300px;
+        }
+
+        .product__small-swiper-2 .swiper-slide img {
+            height: 64px;
+        }
+    }
+
+    .same {
+        padding-bottom: 45px;
+
+        .container {
+            padding: 0 36px;
+        }
+
+        &__swiper-button-prev {
+            right: 81px;
+        }
+
+        &__swiper-button-next {
+            right: 36px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        margin-bottom: 20px;
+    }
+
+    .product {
+        padding-bottom: 19px;
+
+        .container {
+            padding: 0 72px;
+        }
+
+        &__content {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        &__left {
+            grid-column: 1/7;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            column-gap: 32px;
+            margin-bottom: 34px;
+        }
+
+        &__right {
+            grid-column: 3/7;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        &__small-swiper {
+            padding: 25px;
+            background-color: #f6f6f6;
+            margin: 0;
+            height: 350px;
+            grid-column: 1/3;
+            margin-bottom: 32px;
+            border-radius: 10px;
+            grid-row: 2/3;
+        }
+
+        &__swiper {
+            grid-column: 1/7;
+            margin-bottom: 27px;
+            grid-row: 1/2;
+        }
+
+        &__info {
+            grid-column: 3/7;
+            grid-row: 2/3;
+            align-self: center;
+            margin-top: 41px;
+        }
+
+        &__small-swiper .swiper-slide {
+            width: auto;
+            height: auto;
+        }
+
+        &__info-swiper-title,
+        &__info-swiper-descr,
+        &__instruction {
+            grid-column: 1/7;
+        }
+
+        &__info-swiper-descr {
+            width: 85%;
+        }
+
+        & &__info-swiper-descr:nth-child(5) {
+            margin-bottom: 30px;
+        }
+
+        &__small-swiper .swiper-slide {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__right {
+            grid-column: 1/7;
+        }
+
+        &__list-hidden {
+            display: none;
+        }
+
+        &__list-visible {
+            display: flex;
+        }
+    }
+
+    .modal__swiper .product__swiper-2 .swiper-slide img {
+        height: 225px;
+    }
+
+    .modal__swiper .product__small-swiper-2 .swiper-slide img {
+        height: 57px;
+    }
+
+    .modal__overlay,
+    .ok__overlay {
+        width: 80%;
+    }
+
+    .ok__overlay {
+        padding: 118px 0;
+    }
+
+    .same {
+
+        .container {
+            padding: 0 72px;
+        }
+
+        &__swiper-button-next {
+            right: 72px;
+        }
+
+        &__swiper-button-prev {
+            right: 117px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .product {
+        &__list-hidden {
+            display: flex;
+        }
+
+        &__list-visible {
+            display: none;
+        }
+
+        & &__instruction img {
+            width: 185px;
+        }
+    }
+
+    .high-rate__image {
+        margin-bottom: 16px;
+        align-self: center;
+        width: 185px;
+    }
+
+    .high-rate__text {
+        padding: 12px;
+        padding-top: 0;
+    }
+
+    .product__swiper .swiper-slide img {
+        height: 170px;
+    }
+
+    .product__info {
+        margin-bottom: 46px;
+    }
+}
+
+@media (max-width: 580px) {
+    .header__bottom {
+        padding-bottom: 6px;
+    }
+
+    .header {
+        margin-bottom: 5px;
+    }
+
+    .product {
+        padding-bottom: 52px;
+
+        &__content {
+            grid-template-columns: repeat(6, 1fr);
+            grid-column: 16px;
+        }
+
+        &__left {
+            grid-column: 16px;
+        }
+
+        .container {
+            padding: 0 12px;
+        }
+
+        &__list-hidden {
+            width: 100%;
+        }
+
+        &__right {
+            grid-column: 1/7;
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+
+        &__small-swiper {
+            padding: 10px;
+            background-color: #f6f6f6;
+            margin: 0;
+            margin-bottom: 18px;
+            height: inherit;
+            grid-column: 1/7;
+            border-radius: 10px;
+            grid-row: 2/3;
+        }
+
+        &__swiper {
+            grid-column: 1/7;
+            margin-bottom: -14px;
+            grid-row: 1/2;
+        }
+
+        &__info {
+            grid-column: 1/7;
+            grid-row: 3/4;
+            margin: 0;
+            margin-bottom: 32px;
+        }
+
+        &__title {
+            @include font(400, 16px, 20.8px, #333, 8px)
+        }
+
+        &__descr {
+            @include font(400, 14px, 14px, #999, 16px);
+            width: 80%;
+        }
+
+        &__price {
+            @include font(400, 24px, 31.2px, #333, 16px)
+        }
+
+        &__buttons,
+        &__btn {
+            width: 100%;
+        }
+
+        &__info-swiper-descr {
+            width: 99%;
+        }
+
+        & &__instruction img:nth-child(1) {
+            margin-right: 16px;
+        }
+
+        & &__instruction img {
+            width: 140px;
+        }
+
+        &__item-text {
+            display: none;
+        }
+
+        &__list {
+            flex-direction: column;
+        }
+
+        &__item:nth-child(2n - 1) {
+            @include font(400, 10px, 13.62px, #999, 0)
+        }
+
+        &__item:nth-child(2n) {
+            @include font(400, 14px, 19.07px, #333, 8px)
+        }
+    }
+
+    .same {
+        padding-bottom: 60px;
+
+        &__swiper {
+            margin-bottom: 38px;
+            width: 100%;
+        }
+
+        .container {
+            padding: 0 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            @include font(400, 24px, 31.2px, #333, 24px);
+            align-self: flex-start;
+        }
+
+        &__btns {
+            width: 78px;
+            position: relative;
+        }
+
+        &__swiper-button-prev {
+            top: 0;
+            left: 0;
+        }
+
+        &__swiper-button-next {
+            top: 0;
+            right: 0;
+        }
+    }
+
+    .high-rate__card-title {
+        @include font(400, 16px, 20.8px, #333, 16px)
+    }
+
+    .high-rate__card-price {
+        margin-bottom: 18px;
+    }
+
+    .high-rate__text {
+        padding: 16px;
+        padding-top: 0;
+    }
+
+    .high-rate__rating {
+        font-size: 12px;
+        line-height: 15.6px;
+        top: 18px;
+        left: 16px;
+
+        & svg {
+            width: 13px;
+            height: 12px;
+            margin-right: 3px;
+        }
+    }
+
+    .same .high-rate__item {
+        height: 278px;
+    }
+
+    .same .high-rate__card-btn {
+        width: 97%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .same .high-rate__card {
+        padding: 0;
+    }
+
+    .same .high-rate__image {
+        width: 108px;
+    }
+
+    .same .high-rate__item:nth-child(2) .high-rate__image {
+        margin-bottom: 5px;
+    }
+
+    .modal__overlay, .ok__overlay {
+        width: 90%;
+        padding: 30px 16px;
+    }
+
+    .modal__title {
+        @include font(400, 24px, 24px, #333, 8px);
+        width: 100%;
+    }
+
+    .modal__descr {
+        @include font(400, 14px, 19.07px, #333, 16px);
+        width: 100%;
+    }
+
+    .modal__checkbox-offer {
+        @include font(400, 11px, 15px, #A65CF0, 0);
+    }
+
+    .modal__checkbox-accept {
+        @include font(400, 11px, 15px, #333, 0);
+        margin-left: 18px;
+    }
+
+    .modal__checkbox-yes {
+        width: 12px;
+        height: 12px;
+    }
+
+    .ok__img {
+        margin-bottom: 0;
+        width: 73px;
+        margin-right: 25px;
+    }
+
+    .ok__title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .ok__overlay {
+        padding: 30px 75px;
+    }
+
+    .modal__checkbox {
+        display: flex;
+    }
+
+    .modal__swiper .container {
+        width: 100%;
+    }
+
+    .modal__overlay-swiper {
+        padding-top: 15px;
+    }
+
+    .modal__close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+
+        & svg {
+            width: 15px;
+            height: 15px;
+        }
+    }
+
+    .modal__swiper .product__swiper-2 .swiper-slide img {
+        height: 86px;
+    }
+
+    .product__swiper-2 {
+        margin-bottom: 5px;
+    }
+
+    .product__small-swiper-2 {
+        width: 100%;
+        padding: 16px 72px;
+        background-color: #f6f6f6;
+    }
+
+    .modal__swiper .swiper-button-next, .modal__swiper .swiper-button-prev {
+        display: block;
+    }
+
+    .product__swiper-button-prev {
+        left: 7%;
+        top: 55%;
+    }
+
+    .product__swiper-button-next {
+        right: 7%;
+        top: 55%;
+    }
+
+    .modal__swiper .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+    .modal__close {
+        z-index: 100000000000000000000000000000000000000000000000;
+    }
+}

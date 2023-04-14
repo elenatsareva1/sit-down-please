@@ -1,0 +1,240 @@
+@import "../main/helper";
+
+.product {
+    padding-bottom: 67px;
+
+    .container {
+        @include container;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 32px;
+        margin-bottom: 12px;
+    }
+
+    &__right {
+        padding: 16px 0;
+        padding-bottom: 3px;
+        grid-column: 7/13;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__left {
+        grid-column: 1/7;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 110px;
+        align-items: flex-start
+    }
+
+    &__rating {
+        @include font(400, 16px, 20.8px, #FF862F, 0px);
+    }
+
+    &__title {
+        @include font(400, 24px, 31.2px, #333, 5px);
+    }
+
+    &__descr {
+        @include font(400, 14px, 14px, #999, 21px);
+    }
+
+    &__price {
+        @include font(400, 36px, 46.8px, #333, 22px);
+    }
+
+    &__btn {
+        @include font(600, 16px, 16px, #fff, 12px);
+        padding: 0;
+        margin: 0;
+        border-style: none;
+        background-color: transparent;
+        cursor: pointer;
+        background-color: #A65CF0;
+        padding: 19px 35px;
+        border-radius: 10px;
+        margin-bottom: 11px;
+    }
+
+    &__basket {
+        @include font(400, 16px, 20.8px, #A65CF0, 0px);
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+    }
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__item:nth-child(2n - 1) {
+        @include font(400, 14px, 21.2px, #999, 0)
+    }
+
+    &__item:nth-child(2n) {
+        @include font(400, 14px, 25px, #333, 0)
+    }
+
+    &__item-text {
+        @include font(400, 5px, 0, #999, 0);
+    }
+
+    &__instruction {
+        margin-top: auto;
+
+        & img:nth-child(1) {
+            margin-right: 28px;
+        }
+    }
+
+    &__small-swiper {
+        width: 100%;
+    }
+
+    &__swiper {
+        width: 100%;
+    }
+
+    &__info-swiper-title {
+        @include font(600, 16px, 16px, #333, 8px)
+    }
+
+    &__info-swiper-descr {
+        @include font(400, 14px, 25.2px, #333, 0px);
+    }
+
+    &__info-swiper-descr-2 {
+        margin-bottom: 8px;
+    }
+
+    &__swiper {
+        margin-bottom: 12px;
+
+        .swiper-slide {
+            & img {
+                height: 245px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__swiper-2 {
+        width: 100%;
+        margin-bottom: 50px;
+
+        .swiper-slide {
+            & img {
+                height: 418px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__small-swiper-2 {
+        width: 100%;
+        padding: 20px 51px;
+        background-color: #f6f6f6;
+
+        .swiper-slide {
+            width: auto;
+
+            & img {
+                height: 126px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__small-swiper {
+        padding: 10px 25px;
+        background-color: #f6f6f6;
+        margin-bottom: 30px;
+
+        .swiper-slide {
+            width: auto;
+
+            & img {
+                height: 61px;
+                object-fit: contain;
+            }
+        }
+    }
+
+    &__swiper-image {
+        width: initial;
+    }
+
+    &__list-hidden {
+        display: none;
+    }
+}
+
+.modal__swiper .swiper-button-next, .modal__swiper .swiper-button-prev {
+    display: none;
+}
+
+.swiper-button-next {
+    padding: 0;
+    cursor: pointer;
+    top: 22px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #A65CF0;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+
+    &::after {
+        font-size: 0;
+    }
+    
+    & svg path {
+        stroke: #A65CF0;
+    }
+}
+
+.swiper-button-prev {
+    padding: 0;
+    cursor: pointer;
+    top: 22px;
+    right: 44px;
+    left: inherit;
+    width: 32px;
+    height: 32px;
+    transform: rotate(180deg);
+    border-radius: 50%;
+    border: 2px solid #A65CF0;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+
+    &::after {
+        font-size: 0;
+    }
+    
+    & > svg > path {
+        stroke: #A65CF0;
+    }
+}

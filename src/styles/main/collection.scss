@@ -1,0 +1,38 @@
+@import "helper";
+
+.collection {
+    background-image: url(../../images/collection.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+
+    .container {
+        @include container
+    }
+
+    &__title {
+        font-family: "PlayFair";
+        color: #D5B986;
+        font-weight: 900;
+        font-size: 60px;
+        line-height: 72px;
+        margin: 0;
+        margin-top: 3px;
+    }
+
+    &__descr {
+        @include font(400, 48px, 57.6px, #fff, 50px);
+        width: 50%;
+    }
+
+    &__btn {
+        @include font(700, 16px, 16px, #fff, 0);
+        background-color: #A65CF0;
+        border-style: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 22px 31px;
+    }
+}

@@ -1,0 +1,41 @@
+.same {
+  padding-bottom: 69px;
+}
+.same .container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+.same__title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  color: #333;
+  text-decoration: none;
+}
+.same__swiper-button-next {
+  top: 20px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+}
+.same__swiper-button-prev {
+  top: 20px;
+  right: 60px;
+  left: inherit;
+  width: 32px;
+  height: 32px;
+  transform: rotate(180deg);
+}
+.same .high-rate__card {
+  padding-top: 57px;
+}
+.same .high-rate__item {
+  height: 420px;
+}
+.same .high-rate__item {
+  margin-bottom: 0px;
+}/*# sourceMappingURL=same.css.map */

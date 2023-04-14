@@ -1,0 +1,141 @@
+@import "../main/helper";
+
+@media (max-width: 1320px) {
+    .work {
+        padding-bottom: 12px;
+
+        .container {
+            padding: 0 36px;
+        }
+
+        &__provider {
+            width: 88%;
+        }
+
+        &__item-text {
+            width: 62%;
+        }
+
+        &__advantages {
+            width: 88.5%;
+        }
+
+        &__guarantee {
+            width: 88%;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .work {
+
+        .container {
+            padding: 0 72px;
+        }
+
+        &__provider {
+            width: 100%;
+        }
+
+        &__item-text {
+            width: 100%;
+        }
+
+        &__advantages {
+            width: 100%;
+        }
+
+        &__guarantee {
+            width: 100%;
+        }
+
+        &__smth-text {
+            width: 92%;
+        }
+    }
+}
+
+@media (max-width: 760px) {
+    .work {
+
+        .container {
+            padding: 0 12px;
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .work {
+        padding-bottom: 17px;
+
+        .container {
+            padding: 0 12px;
+        }
+
+        &__location {
+            display: none;
+        }
+
+        &__title {
+            @include font(400, 24px, 24px, #333, 32px);
+        }
+
+        &__subtitle {
+            @include font(400, 16px, 21.79px, #333, 11px);
+        }
+
+        &__descr {
+            @include font(400, 14px, 25.2px, #666, 0px);
+        }
+
+        &__item-text {
+            @include font(400, 14px, 21px, #666, 0px);
+        }
+
+        &__item svg {
+            width: 30px;
+            height: 30px;
+        }
+
+        &__br {
+            display: block;
+        }
+
+        & &__subtitle-another {
+           font-size: 14px;
+        }
+
+        &__get {
+            margin-bottom: 30px;
+        }
+
+        &__advantages-descr {
+            margin-bottom: 9px;
+        }
+
+        &__advantages {
+            margin-bottom: 32px;
+        }
+
+        &__guarantee &__descr {
+            line-height: 25px;
+        }
+
+        &__smth {
+
+            &-text {
+                @include font(400, 16px, 24px, #333, 0);
+                width: 62%;
+            }
+        
+        & img {
+            width: 36px;
+            margin-right: 16px;
+        }
+    }
+
+    &__guarantee-list {
+        margin-bottom: 30px;
+    }
+    }
+}

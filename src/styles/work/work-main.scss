@@ -1,0 +1,105 @@
+@import "../main/helper";
+
+.work {
+    padding-bottom: 37px;
+
+    .container {
+        @include container;
+    }
+
+    &__title {
+        @include font(400, 32px, 32px, #333, 33px);
+    }
+
+    &__subtitle {
+        @include font(400, 24px, 32.68px, #333, 12px);
+    }
+
+    &__descr {
+        @include font(400, 16px, 28.8px, #333, 0px);
+    }
+
+    &__provider {
+        width: 65%;
+    }
+
+    &__provider,
+    &__get,
+    &__advantages,
+    &__guarantee {
+        margin-bottom: 33px;
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none
+    }
+
+    &__item {
+        @include font(400, 16px, 24px, #666, 12px);
+        display: flex;
+        align-items: flex-start;
+
+        & svg {
+            margin-right: 11px;
+        }
+
+        &-text {
+            width: 46%;
+        }
+    }
+
+    &__chance {
+        @include font(600, 16px, 21.79px, #FF862F, 12px)
+    }
+
+    &__advantages {
+        width: 66%;
+        margin-bottom: 34px;
+    }
+
+    &__advantages-descr {
+        margin-bottom: 13px;
+    }
+
+    &__descr-item {
+        display: flex;
+        align-items: flex-start;
+
+        &:nth-child(-n + 2) {
+            margin-bottom: 13px;
+        }
+    }
+
+    &__count {
+        @include font(600, 16px, 28.8px, #FF862F, 0);
+        margin-right: 16px;
+    }
+
+    &__guarantee {
+        width: 65.5%;
+    }
+
+    &__smth {
+        @include font(400, 24px, 36px, #333, 0);
+        display: flex;
+        align-items: center;
+
+        & img {
+            margin-right: 32px;
+        }
+    }
+
+    &__smth-text {
+        width: 60%;
+    }
+
+    &__guarantee-list {
+        margin-bottom: 32px;
+    }
+
+    &__br {
+        display: none;
+    }
+}

@@ -1,0 +1,296 @@
+.catalog {
+  padding-bottom: 70px;
+}
+.catalog .container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.catalog__content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+}
+.catalog__options {
+  grid-column: 1/4;
+}
+.catalog__options-title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  color: #333;
+  text-decoration: none;
+}
+.catalog__options-item-title {
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  color: #333;
+  text-decoration: none;
+}
+.catalog__options-item-title-custom {
+  margin-bottom: 5px;
+}
+.catalog__checkbox-text {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: #999;
+  text-decoration: none;
+  margin-left: 32px;
+}
+.catalog__category-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 28px;
+}
+.catalog__category-list:nth-child(2) {
+  margin-bottom: 37px;
+}
+.catalog__options-item {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 11px;
+  cursor: pointer;
+}
+.catalog__label {
+  position: relative;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.catalog__input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.catalog__input:checked + .catalog__checkbox {
+  background-image: url(../../images/chekbox.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.catalog__checkbox {
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid #999;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  border-radius: 4px;
+}
+.catalog__options-card-text {
+  background-color: #333;
+  margin-top: -5px;
+  padding: 31px;
+  padding-bottom: 29px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.catalog__options-card-title {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  color: #D5B986;
+  text-decoration: none;
+  font-family: "PlayFair";
+}
+.catalog__options-card-descr {
+  margin: 0;
+  margin-bottom: 14px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  color: #999;
+  text-decoration: none;
+}
+.catalog__options-card-btn {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.2px;
+  color: #A65CF0;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  border-style: none;
+  display: flex;
+}
+.catalog__options-card-btn svg {
+  margin-left: 4px;
+  width: 22px;
+  height: 22px;
+}
+.catalog__options-card-btn svg path {
+  stroke: #A65CF0;
+}
+.catalog__options-card-btn svg circle, .catalog__options-card-btn svg path {
+  stroke: #A65CF0;
+  fill: transparent;
+}
+.catalog__card-btn {
+  width: 100%;
+  height: 100%;
+}
+.catalog__options-list {
+  margin-bottom: 90px;
+}
+.catalog__price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.catalog__field {
+  display: flex;
+  align-items: baseline;
+}
+.catalog__field-min, .catalog__field-max {
+  border: 1px solid #999;
+  width: 86px;
+  padding: 4px 13px;
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.28px;
+  color: #666;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.catalog__field span {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: #666;
+  text-decoration: none;
+  margin-right: 9px;
+}
+.catalog__slider {
+  height: 3px;
+  border-radius: 5px;
+  background-color: #EAEAEA;
+  position: relative;
+  cursor: pointer;
+}
+.catalog__progress {
+  height: 3px;
+  position: absolute;
+  left: 2.8%;
+  right: 26%;
+  border-radius: 5px;
+  background-color: #A65CF0;
+}
+.catalog__range {
+  position: relative;
+  width: 100%;
+}
+.catalog__range input {
+  position: absolute;
+  top: 1px;
+  width: 100%;
+  outline: none;
+  pointer-events: none;
+  background-color: transparent;
+  height: 3px;
+  background: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.catalog input[type=number]::-webkit-outer-spin-button,
+.catalog input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+.catalog input[type=range]::-webkit-slider-thumb {
+  height: 7.5px;
+  width: 7.5px;
+  border: 7.5px solid transparent;
+  border-bottom: 15px solid #A65CF0;
+  -webkit-appearance: none;
+          appearance: none;
+  pointer-events: auto;
+  background: none;
+  cursor: pointer;
+}
+.catalog__products {
+  grid-column: 4/13;
+}
+.catalog .high-rate__item {
+  width: calc((100% - 64px) / 3);
+  margin-right: 32px;
+  height: 420px;
+}
+.catalog .high-rate__item:nth-child(3n) {
+  margin-right: 0;
+}
+.catalog .high-rate__item:nth-child(-n+6) {
+  margin-bottom: 32px;
+}
+.catalog .high-rate__card {
+  padding-top: 60px;
+}
+.catalog__products-title {
+  margin: 0;
+  margin-bottom: 23px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  color: #333;
+  text-decoration: none;
+  align-self: flex-start;
+}
+.catalog__button-1, .catalog__button-2, .catalog__button-3 {
+  padding: 0;
+  margin: 0;
+  border-style: none;
+  background-color: transparent;
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #A65CF0;
+  text-decoration: none;
+  border: 2px solid #A65CF0;
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+.catalog__button-1 {
+  margin-right: 12px;
+}
+.catalog__products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.catalog__select {
+  display: none;
+}
+.catalog__button-3 {
+  display: none;
+}
+.catalog .high-rate__list-3 {
+  display: none;
+}
+.catalog__br {
+  display: none;
+}
+.catalog .catalog__select-title {
+  display: none;
+}/*# sourceMappingURL=catalog-main.css.map */

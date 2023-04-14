@@ -1,0 +1,108 @@
+@import "helper";
+
+.special {
+    padding: 71px 0;
+    padding-bottom: 70px;
+
+    .container {
+        @include container
+    }
+
+    &__swiper {
+        overflow: hidden;
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+
+        .swiper-slide:nth-child(1),
+        .swiper-slide:nth-child(3),
+        .swiper-slide:nth-child(4),
+        .swiper-slide:nth-child(6) {
+            width: calc(25% - 24px);
+        }
+
+        .swiper-slide:nth-child(2),
+        .swiper-slide:nth-child(5) {
+            width: calc(50% - 16px);
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__title {
+        @include font(400, 32px, 32px, #333, 26px)
+    }
+
+    &__slide-image {
+        align-self: center;
+        margin-bottom: 14px;
+    }
+
+    &__slide-prices {
+        margin-bottom: 18px;
+    }
+
+    &__slide-instruction {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    @include specialCard(30px, 400, 24px, 31.2px, #333333, 21px, 400,
+        18px, 23.4px, #FF862F, 23px, 400, 16px, 20.8px, #999, 0px, 600,
+        16px, 16px, #A65CF0, 0, 19px 34px, 700, 14px, 19px, #fff, 0)
+}
+
+.swiper-button-next {
+    padding: 0;
+    cursor: pointer;
+    top: 22px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #A65CF0;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+
+    &::after {
+        font-size: 0;
+    }
+    
+    & svg path {
+        stroke: #A65CF0;
+    }
+}
+
+.swiper-button-prev {
+    padding: 0;
+    cursor: pointer;
+    top: 22px;
+    right: 44px;
+    left: inherit;
+    width: 32px;
+    height: 32px;
+    transform: rotate(180deg);
+    border-radius: 50%;
+    border: 2px solid #A65CF0;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+
+    &::after {
+        font-size: 0;
+    }
+    
+    & > svg > path {
+        stroke: #A65CF0;
+    }
+    br {
+        display: block;
+    }
+}

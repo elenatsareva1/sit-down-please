@@ -1,0 +1,129 @@
+.high-rate {
+  padding-bottom: 70px;
+}
+.high-rate .container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.high-rate__title {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #333;
+  text-decoration: none;
+}
+.high-rate__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.high-rate__item {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: calc(25% - 24px);
+  margin-right: 32px;
+  border-radius: 10px;
+  background-color: #F6F6F6;
+}
+.high-rate__item:nth-child(-n+4) {
+  margin-bottom: 28px;
+}
+.high-rate__item:nth-child(4n) {
+  margin-right: 0;
+}
+.high-rate__card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex: 1;
+  justify-content: start;
+  padding-top: 65px;
+}
+.high-rate__card-title {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.2px;
+  color: #333;
+  text-decoration: none;
+}
+.high-rate__card-price {
+  margin: 0;
+  margin-bottom: 22px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: #666;
+  text-decoration: none;
+}
+.high-rate__card-btn {
+  margin: 0;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #A65CF0;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  border-style: none;
+  background-color: transparent;
+  border: 2px solid #A65CF0;
+  padding: 17px 34px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 17px 33px;
+  display: inline-block;
+}
+.high-rate__rating {
+  margin: 0;
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20.8px;
+  color: #FF862F;
+  text-decoration: none;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.high-rate__text {
+  padding: 30px;
+  padding-top: 0;
+}
+.high-rate__image {
+  margin-bottom: 16px;
+  align-self: center;
+}
+.high-rate__btn {
+  border-style: none;
+  background-color: #A65CF0;
+  border-radius: 10px;
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+  padding: 22px 36px;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+.high-rate .high-rate__list-hidden {
+  display: none;
+}/*# sourceMappingURL=high-rate.css.map */

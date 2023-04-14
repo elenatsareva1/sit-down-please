@@ -1,0 +1,88 @@
+@mixin container {
+    max-width: 1310px;
+    padding: 0 15px;
+    margin: 0 auto;
+    @content
+}
+
+;
+
+@mixin ulReset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+;
+
+@mixin font($weight, $size, $line, $color, $margin) {
+    margin: 0;
+    margin-bottom: $margin;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line;
+    color: $color;
+    text-decoration: none;
+}
+
+;
+
+@mixin specialCard($cardPadding, $tweight, $tsize, $tline, $tcolor, $tmargin, $pnweight,
+    $pnsize, $pnline, $pncolor, $pnmargin, $ptweight, $ptsize, $ptline, $ptcolor,
+    $ptmargin, $btnweight, $btnsize, $btnline, $btncolor, $btnmargin, $btnpadding,
+    $sweight, $ssize, $sline, $scolor, $smargin) {
+
+    .special__slide-content {
+        position: relative;
+        background-color: #F6F6F6;
+        padding: $cardPadding;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        justify-content: start;
+        border-radius: 10px;
+        padding-top: 37px;
+    }
+
+    .special__slide-title {
+        @include font($tweight, $tsize, $tline, $tcolor, $tmargin);
+    }
+
+    .special__slide-price-now {
+        @include font($pnweight, $pnsize, $pnline, $pncolor, $pnmargin);
+        margin-right: 30px;
+    }
+
+    .special__slide-price-then {
+        @include font($ptweight, $ptsize, $ptline, $ptcolor, $ptmargin);
+        text-decoration: line-through;
+    }
+
+    .special__slide-btn {
+        padding: 0;
+        cursor: pointer;
+        margin: 0;
+        background-color: transparent;
+        border-style: none;
+        @include font($btnweight, $btnsize, $btnline, $btncolor, $btnmargin);
+        border: 2px solid #A65CF0;
+        padding: $btnpadding;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    .special-sale {
+        @include font($sweight, $ssize, $sline, $scolor, $smargin);
+        background: #58a;
+        background: linear-gradient(225deg, transparent 10px, #FF682f 0) top right, linear-gradient(-45deg, transparent 10px, #FF682f 0) bottom right;
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        padding: 7px 15px;
+        left: 0;
+        padding-right: 25px;
+        top: 30px;
+        position: absolute
+    }
+};

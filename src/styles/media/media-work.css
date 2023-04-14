@@ -1,0 +1,131 @@
+@media (max-width: 1320px) {
+  .work {
+    padding-bottom: 12px;
+  }
+  .work .container {
+    padding: 0 36px;
+  }
+  .work__provider {
+    width: 88%;
+  }
+  .work__item-text {
+    width: 62%;
+  }
+  .work__advantages {
+    width: 88.5%;
+  }
+  .work__guarantee {
+    width: 88%;
+  }
+}
+@media (max-width: 992px) {
+  .work .container {
+    padding: 0 72px;
+  }
+  .work__provider {
+    width: 100%;
+  }
+  .work__item-text {
+    width: 100%;
+  }
+  .work__advantages {
+    width: 100%;
+  }
+  .work__guarantee {
+    width: 100%;
+  }
+  .work__smth-text {
+    width: 92%;
+  }
+}
+@media (max-width: 760px) {
+  .work .container {
+    padding: 0 12px;
+  }
+}
+@media (max-width: 580px) {
+  .work {
+    padding-bottom: 17px;
+  }
+  .work .container {
+    padding: 0 12px;
+  }
+  .work__location {
+    display: none;
+  }
+  .work__title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333;
+    text-decoration: none;
+  }
+  .work__subtitle {
+    margin: 0;
+    margin-bottom: 11px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    color: #333;
+    text-decoration: none;
+  }
+  .work__descr {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: #666;
+    text-decoration: none;
+  }
+  .work__item-text {
+    margin: 0;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    color: #666;
+    text-decoration: none;
+  }
+  .work__item svg {
+    width: 30px;
+    height: 30px;
+  }
+  .work__br {
+    display: block;
+  }
+  .work .work__subtitle-another {
+    font-size: 14px;
+  }
+  .work__get {
+    margin-bottom: 30px;
+  }
+  .work__advantages-descr {
+    margin-bottom: 9px;
+  }
+  .work__advantages {
+    margin-bottom: 32px;
+  }
+  .work__guarantee .work__descr {
+    line-height: 25px;
+  }
+  .work__smth-text {
+    margin: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333;
+    text-decoration: none;
+    width: 62%;
+  }
+  .work__smth img {
+    width: 36px;
+    margin-right: 16px;
+  }
+  .work__guarantee-list {
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=media-work.css.map */

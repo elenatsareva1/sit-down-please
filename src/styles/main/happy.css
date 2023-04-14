@@ -1,0 +1,177 @@
+.happy {
+  padding-bottom: 70px;
+}
+.happy .container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.happy__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  align-items: center;
+}
+.happy__left {
+  display: flex;
+  flex-direction: column;
+}
+.happy__title {
+  margin: 0;
+  margin-bottom: 9px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #333;
+  text-decoration: none;
+}
+.happy__descr {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.07px;
+  color: #999;
+  text-decoration: none;
+}
+.happy__form {
+  display: flex;
+  flex-direction: column;
+}
+.happy__input {
+  width: 100%;
+  padding: 18px 18px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background-color: #F6F6F6;
+}
+.happy__input::-moz-placeholder {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #999;
+  text-decoration: none;
+}
+.happy__input::placeholder {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #999;
+  text-decoration: none;
+}
+.happy__input:nth-child(3) {
+  margin-bottom: 28px;
+}
+.happy__btn {
+  padding: 0;
+  margin: 0;
+  border-style: none;
+  background-color: #A65CF0;
+  padding: 19px 35px;
+  border-radius: 10px;
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  color: #fff;
+  text-decoration: none;
+  align-self: start;
+  cursor: pointer;
+}
+.happy__checkbox-offer {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #A65CF0;
+  text-decoration: none;
+}
+.happy__checkbox-accept {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #333;
+  text-decoration: none;
+  margin-left: 22px;
+}
+.happy__right {
+  margin-top: 4px;
+}
+.happy__checkbox {
+  position: relative;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.happy__descr svg {
+  cursor: pointer;
+}
+.happy__check-input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+}
+.happy__check-input:checked + .happy__checkbox-yes {
+  background-image: url(../../images/chekbox.svg);
+  background-position: bottom;
+}
+.happy__checkbox-yes {
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid #999;
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  border-radius: 4px;
+}
+.happy__message {
+  position: absolute;
+  top: -17px;
+  left: 17px;
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: red;
+  text-decoration: none;
+}
+.happy__message-checkbox {
+  top: 21px;
+}
+.happy__container {
+  position: relative;
+  width: 100%;
+}
+.happy__container:nth-child(3) {
+  margin-bottom: -2px;
+}
+.happy br {
+  display: none;
+}
+
+.tippy-content {
+  margin: 0;
+  margin-bottom: 0;
+  font-size: 9px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+#tippy-1 {
+  width: 157px;
+}/*# sourceMappingURL=happy.css.map */

@@ -1,0 +1,42 @@
+@import "../main/helper";
+
+.same {
+    padding-bottom: 69px;
+
+    .container {
+        @include container;
+        position: relative;
+    }
+
+    &__title {
+        @include font(400, 24px, 31.2px, #333, 24px)
+    }
+
+    &__swiper-button-next {
+        top: 20px;
+        right: 15px;
+        width: 32px;
+        height: 32px;
+    }
+
+    &__swiper-button-prev {
+        top: 20px;
+        right: 60px;
+        left: inherit;
+        width: 32px;
+        height: 32px;
+        transform: rotate(180deg);
+    }
+
+    .high-rate__card {
+        padding-top: 57px;
+    }
+
+    .high-rate__item {
+        height: 420px;
+    }
+
+    .high-rate__item {
+        margin-bottom: 0px;
+    }
+}

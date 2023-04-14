@@ -1,0 +1,97 @@
+@import "helper";
+
+.hero {
+
+    .container {
+        @include container {
+            max-width: 1280px;
+        }
+    }
+
+    &__content {
+        padding: 80px 0;
+        width: 50%;
+    }
+
+    &__title {
+        @include font(700, 48px, 65px, #999, 49px);
+    }
+
+    &__title-custom {
+        color: #fff;
+    }
+
+    &__btn {
+        @include font(700, 16px, 16px, #fff, 0);
+        background-color: #A65CF0;
+        padding: 22px 50px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    &__swiper {
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        position: relative;
+    }
+
+    .swiper-pagination-bullet {
+        opacity: 1;
+        width: 25px;
+        height: 25px;
+        background: transparent;
+        position: relative;
+    }
+
+    .swiper-slide {
+
+        &:nth-child(1) {
+            background-image: url(../../images/hero1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(2) {
+            background-image: url(../../images/hero2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(3) {
+            background-image: url(../../images/hero3.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .swiper-pagination {
+        bottom: 20px;
+    }
+}
+
+.swiper-orange {
+    stroke-dasharray: 62.8319, 62.8319;
+    stroke-dashoffset: 62.8319;
+}
+
+.swiper-pagination-bullet-active .swiper-orange {
+    animation: circle-progress 5.75s linear forwards;
+    animation-duration: 5.75s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: circle-progress;
+}
+
+@keyframes circle-progress {
+    from {
+      stroke-dashoffset: 62.8319;
+    }
+    to {
+      stroke-dashoffset: 0;
+    }
+  }

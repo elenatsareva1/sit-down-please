@@ -1,0 +1,122 @@
+.header__top-select-body {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.header__top-select-icon, .header__bottom-select-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.catalog__select-body {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.ok {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal__swiper {
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.hero__btn, .high-rate__btn, .collection__btn, .happy__btn, .product__btn, .modal__btn {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.special__slide-btn, .high-rate__card-btn, .useful__swiper-btn {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__link-top, .footer__right-list-item-item {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.footer__right-list-item-item-title, .header__link-bottom {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__bottom-select-header {
+  transition: outline-color 0.3s ease-in-out;
+}
+
+.header__bottom-select-item, .header__top-select-item, .header__top-select-header {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__search {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, fill 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.header__social {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.header__social svg {
+  transition: fill 0.3s ease-in-out;
+}
+
+.header__user, .header__box {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.header__user svg, .header__box svg {
+  transition: fill 0.3s ease-in-out;
+}
+
+.footer__link svg {
+  transition: fill 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.catalog__button-1, .catalog__button-2, .catalog__button-3 {
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.catalog__label .catalog__checkbox-text {
+  transition: color 0.3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.catalog__field-min, .catalog__field-max {
+  transition: outline 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.hits__card-btn::after, .catalog__options-card-btn::after {
+  transition: background-color 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.hits__card-btn, .catalog__options-card-btn {
+  transition: color 0.3s ease-in-out;
+}
+.hits__card-btn svg circle, .hits__card-btn svg path, .catalog__options-card-btn svg circle, .catalog__options-card-btn svg path {
+  transition: stroke 0.3s ease-in-out, fill 0.3s ease-in-out;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.swiper-button-next svg path, .swiper-button-prev svg path {
+  transition: stroke 0.3s ease-in-out;
+}
+
+.product__basket {
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.header__nav-bottom {
+  transition: left 0.3s ease-in-out;
+}
+
+.header__burger {
+  transition: transform 0.3s ease-in-out;
+}
+
+.header__burger span {
+  transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+}/*# sourceMappingURL=transitions.css.map */

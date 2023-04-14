@@ -1,0 +1,101 @@
+@import "helper";
+
+.footer {
+
+    .container {
+        @include container;
+    }
+
+    &__top {
+        background-color: #EAEAEA;
+        padding: 24px 0;
+        padding-bottom: 20px;
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        column-gap: 32px;
+    }
+
+    &__left {
+        grid-column: 1/3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__left-list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    &__left-item:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    &__left-item {
+        cursor: pointer;
+    }
+
+    &__logo {
+        margin-bottom: 31px;
+        cursor: pointer;
+    }
+
+    &__right-list {
+        grid-column: 5/13;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+    }
+
+    &__right-item {
+        padding-top: 2px;
+
+        &:nth-child(2) {
+            margin-right: 20px;
+        }
+
+        &:nth-child(3) {
+            margin-right: 33px;
+        }
+    }
+
+    &__right-list-item {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__right-list-item-item {
+        @include font(400, 14px, 14px, #999, 10px);
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__right-list-item-item-title {
+        @include font(400, 16px, 16px, #333, 8px);
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        background-color: #F6F6F6;
+        padding: 7px 0;
+
+        &-text {
+            @include font(400, 15px, 19px, #999, 0)
+        }
+    }
+}

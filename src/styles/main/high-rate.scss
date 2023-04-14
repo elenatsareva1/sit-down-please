@@ -1,0 +1,109 @@
+@import "helper";
+
+.high-rate {
+    padding-bottom: 70px;
+
+    .container {
+        @include container;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    &__title {
+        @include font(400, 32px, 32px, #333, 26px)
+    }
+
+    &__list {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: calc(25% - 24px);
+        margin-right: 32px;
+        border-radius: 10px;
+        background-color: #F6F6F6;
+
+        &:nth-child(-n + 4) {
+            margin-bottom: 28px;
+        }
+
+
+        &:nth-child(4n) {
+            margin-right: 0;
+        }
+    }
+
+    &__card {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        flex: 1;
+        justify-content: start;
+        padding-top: 65px;
+
+        &-title {
+            @include font(400, 24px, 31.2px, #333, 24px)
+        }
+
+        &-price {
+            @include font(400, 16px, 20.8px, #666, 22px)
+        }
+
+        &-btn {
+            @include font(600, 16px, 16px, #A65CF0, 0px);
+            padding: 0;
+            margin: 0;
+            border-style: none;
+            background-color: transparent;
+            border: 2px solid #A65CF0;
+            padding: 17px 34px;
+            border-radius: 10px;
+            cursor: pointer;
+            padding: 17px 33px;
+            display: inline-block;
+        }
+    }
+
+    &__rating {
+        @include font(400, 16px, 20.8px, #FF862F, 0px);
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+
+    &__text {
+        padding: 30px;
+        padding-top: 0;
+    }
+
+    &__image {
+        margin-bottom: 16px;
+        align-self: center;
+    }
+
+    &__btn {
+        border-style: none;
+        background-color: #A65CF0;
+        border-radius: 10px;
+        @include font(700, 16px, 16px, #fff, 0);
+        padding: 0;
+        margin: 0;
+        padding: 22px 36px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+
+    .high-rate__list-hidden {
+        display: none;
+    }
+}
