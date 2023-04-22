@@ -7,7 +7,7 @@ const validationAfter = () => {
     const nameInput = document.querySelector('.happy__name')
     const telInput = document.querySelector('.happy__tel')
     const mailInput = document.querySelector('.happy__mail')
-    const checkboxInput = document.querySelector('.happy__checkbox')
+    const checkboxInput = document.querySelector('.happy__check-input')
     const nameInputModal = document.querySelector('.modal__input-name')
     const telInputModal = document.querySelector('.modal__input-tel')
     const nameError = document.querySelector('.happy__message-name')
@@ -70,7 +70,7 @@ const validationAfter = () => {
             error.innerHTML = 'Подозрительно короткая почта'
             return false
         }
-        else if (rejexpMail.test(input.value)) {
+        else if (!rejexpMail.test(input.value)) {
             input.style.outline = '2px solid red'
             error.innerHTML = 'Допустимы только символы латиницы'
             return false
@@ -115,7 +115,7 @@ const validationBefore = () => {
     const nameInput = document.querySelector('.happy__name')
     const telInput = document.querySelector('.happy__tel')
     const mailInput = document.querySelector('.happy__mail')
-    const checkboxInput = document.querySelector('.happy__checkbox')
+    const checkboxInput = document.querySelector('.happy__check-input')
     const nameInputModal = document.querySelector('.modal__input-name')
     const telInputModal = document.querySelector('.modal__input-tel')
     const nameError = document.querySelector('.happy__message-name')
@@ -205,7 +205,7 @@ const validationBefore = () => {
                 error.innerHTML = 'Подозрительно короткая почта'
                 return false
             }
-            else if (rejexpMail.test(input.value)) {
+            else if (!rejexpMail.test(input.value)) {
                 input.style.outline = '2px solid red'
                 error.innerHTML = 'Допустимы только символы латиницы'
                 return false
