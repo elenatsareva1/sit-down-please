@@ -17,7 +17,7 @@ const validationAfter = () => {
     const nameErrorModal = document.querySelector('.modal__error-name')
     const telErrorModal = document.querySelector('.modal__error-tel')
     const rejexpName = /[^а-яА-ЯёЁ]/
-    const rejexpMail = /[^a-zA-Z|@|.|^0-9]/
+    const rejexpMail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 
     const validateName = (input, error) => {
         if (!input.value) {
@@ -75,11 +75,6 @@ const validationAfter = () => {
             error.innerHTML = 'Допустимы только символы латиницы'
             return false
         }
-        else if (!input.value.includes('@mail.ru') && !input.value.includes('@gmail.com')) {
-            input.style.outline = '2px solid red'
-            error.innerHTML = 'Не очень то и на почту похоже'
-            return false
-        }
 
         return true
     }
@@ -91,14 +86,8 @@ const validationAfter = () => {
           return false
       }
 
-      const phone = inputMask.inputmask.unmaskedvalue()
-
-      if (phone.length !== 10) {
-          return false
-      }
-
       return true
-  }
+    }
 
     if (!window.location.href.includes("catalog.html") &&
         !window.location.href.includes("product.html") && !window.location.href.includes("work.html")) {
@@ -139,7 +128,7 @@ const validationBefore = () => {
     const keyCodeArray = []
     const rejexpName = /[^а-яА-ЯёЁ]/
     const rejexpTel = /[^1-9|0]/
-    const rejexpMail = /[^a-zA-Z|@|.|^0-9]/
+    const rejexpMail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 
     const validateName = (input, error) => {
         input.addEventListener('input', () => {
@@ -221,16 +210,22 @@ const validationBefore = () => {
                 error.innerHTML = 'Допустимы только символы латиницы'
                 return false
             }
-            else if (!input.value.includes('@mail.ru') && !input.value.includes('@gmail.com')) {
-                input.style.outline = '2px solid red'
-                error.innerHTML = 'Не очень то и на почту похоже'
-                return false
-            }
+
             else {
                 input.style.outline = '2px solid #B8EC64'
                 error.innerHTML = ''
             }
         })
+    }
+
+    const validateCheckbox = (input, error) => {
+      if (!input.value) {
+          input.style.outline = '2px solid red'
+          error.innerHTML = 'Поставьте флажок о прочтении пользовательского соглашения'
+          return false
+      }
+
+      return true
     }
 
     if (!window.location.href.includes("catalog.html") &&

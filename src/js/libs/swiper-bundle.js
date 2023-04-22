@@ -6147,7 +6147,7 @@
         pagination: {
           el: null,
           bulletElement: 'span',
-          clickable: true,
+          clickable: false,
           hideOnClick: false,
           renderBullet: null,
           renderProgressbar: null,

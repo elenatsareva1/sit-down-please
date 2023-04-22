@@ -380,7 +380,6 @@ body {
 .header__top-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .header__top-select-body {
   opacity: 0;
@@ -1543,10 +1542,6 @@ body {
 .header__top-select-header:active {
   background-color: none;
   color: #7033AC;
-}
-
-.header__top-select-current:hover {
-  color: #C998FB;
 }
 
 .header__top-select-item:hover {

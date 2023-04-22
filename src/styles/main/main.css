@@ -380,7 +380,6 @@ body {
 .header__top-content {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .header__top-select-body {
   opacity: 0;
@@ -739,6 +738,7 @@ body {
 
 .swiper-backface-hidden .swiper-slide {
   transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -843,7 +843,7 @@ body {
 
 .swiper-centered > .swiper-wrapper > .swiper-slide {
   scroll-snap-align: center center;
-} 
+}
 .swiper-pagination {
   position: absolute;
   text-align: center;
@@ -1323,7 +1323,7 @@ button.swiper-pagination-bullet {
   position: relative;
   flex-direction: column;
   flex: 1;
-  justify-content: start;
+  justify-content: end;
   padding-top: 65px;
 }
 .high-rate__card-title {
@@ -1944,7 +1944,6 @@ button.swiper-pagination-bullet {
   }
   .header__nav-top {
     width: calc(100% - 242px);
-    margin-right: 15px;
   }
   .header__top {
     padding: 8px 0;
@@ -2543,16 +2542,6 @@ button.swiper-pagination-bullet {
     padding-bottom: 8px;
     display: flex;
     justify-content: center;
-  }
-  .header__search-placeholder-text {
-    font-size: 14px;
-  }
-  .header__seacrh-icon svg {
-    width: 15px;
-    height: 15px;
-  }
-  .header__search-placeholder {
-    left: 11px;
   }
   .header .container {
     padding: 0 12px;
@@ -3194,10 +3183,6 @@ button.swiper-pagination-bullet {
 .header__top-select-header:active {
   background-color: none;
   color: #7033AC;
-}
-
-.header__top-select-current:hover {
-  color: #C998FB;
 }
 
 .header__top-select-item:hover {
