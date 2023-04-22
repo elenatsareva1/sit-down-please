@@ -80,9 +80,11 @@ const validationAfter = () => {
     }
 
     const validateCheckbox = (input, error) => {
-      if (!input.value) {
+      if (!input.checked) {
           input.style.outline = '2px solid red'
-          error.innerHTML = 'Поставьте флажок о прочтении пользовательского соглашения'
+          if(error) {
+            error.innerHTML = 'Поставьте флажок о прочтении пользовательского соглашения'
+          }
           return false
       }
 
@@ -219,9 +221,11 @@ const validationBefore = () => {
     }
 
     const validateCheckbox = (input, error) => {
-      if (!input.value) {
+      if (!input.checked) {
           input.style.outline = '2px solid red'
-          error.innerHTML = 'Поставьте флажок о прочтении пользовательского соглашения'
+          if(error) {
+            error.innerHTML = 'Поставьте флажок о прочтении пользовательского соглашения'
+          }
           return false
       }
 
